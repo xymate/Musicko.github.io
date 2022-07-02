@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="play.css">
+    <link rel="icon" href="img/musicko.png">
+    <script src="https://kit.fontawesome.com/23d5e2e947.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Allison&family=Merriweather:wght@300&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=PT+Serif&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Fredoka+One&display=swap" rel="stylesheet">
+
+    <title>Musicko Play</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-center">
+            <div class="nav-header">
+                <img src="img/musicko final.png"  class="logo "alt="">
+                <button class="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <ul class="links">
+                <li>
+                    <a href="spotify.html">HOME</a>
+                </li>
+                <li>
+                    <a href="play.html">PLAY</a>
+                </li>
+                <li>
+                    <a href="topartist.html">TOP ARTISTS</a>
+                </li>
+                <li>
+                    <a href="#">ABOUT</a>
+                </li>
+            </ul>
+            <ul class="social-icons">
+                <li>
+                  <a href="https://www.twitter.com">
+                    <button type="button" class="signup" name="myButton">SIGN UP</button>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.twitter.com">
+                    <button type="button" class="login" name="myButton">LOG IN</button>
+                  </a>
+                </li>
+              </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="songList">
+            <h1 class="main-heading">PLAY YOUR FAVOURITES</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img src="covers/1.jpg" alt="1">
+                    <span class="songName">Warriyo - Immortals</span>
+                    <span class="songlistplay"><span class="timestamp">03:50 <i id="0" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/2.jpg" alt="1">
+                    <span class="songName">Huma Huma</span>
+                    <span class="songlistplay"><span class="timestamp">02:33 <i id="1" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/3.jpg" alt="1">
+                    <span class="songName">Janji - Heroes Tonight</span>
+                    <span class="songlistplay"><span class="timestamp">03:28 <i id="2" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/4.jpg" alt="1">
+                    <span class="songName">Faded - Alan Walker</span>
+                    <span class="songlistplay"><span class="timestamp">03:32 <i id="3" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/5.jpg" alt="1">
+                    <span class="songName">On my way - Alan Walker</span>
+                    <span class="songlistplay"><span class="timestamp">03:39 <i id="4" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/6.jpg" alt="1">
+                    <span class="songName">On & On - Cartoon</span>
+                    <span class="songlistplay"><span class="timestamp">03:15 <i id="5" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/7.jpg" alt="1">
+                    <span class="songName">Amplifier - Imran Khan</span>
+                    <span class="songlistplay"><span class="timestamp">03:51 <i id="6" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/8.jpg" alt="1">
+                    <span class="songName">Bhool Bhulaiya Title Track</span>
+                    <span class="songlistplay"><span class="timestamp">03:35 <i id="7" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/9.jpg" alt="1">
+                    <span class="songName">Kal Ho Na Ho</span>
+                    <span class="songlistplay"><span class="timestamp">05:30 <i id="8" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/10.jpg" alt="1">
+                    <span class="songName">kabhi kabhi aditi</span>
+                    <span class="songlistplay"><span class="timestamp">03:56 <i id="9" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="icons">
+            <i class="fas fa-3x fa-step-backward" id="previous"></i>
+            <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+            <i class="fas fa-3x fa-step-forward" id="next"></i> 
+        </div>
+        
+        <div class="songInfo">
+            <img src="playing.gif" width="42px" alt="" id="gif"> <span id="masterSongName">Warriyo - Mortals [NCS Release]</span>
+        </div>
+    </div>
+    <script src="play.js"></script>
+
+</body>
+</html>
